@@ -1,0 +1,57 @@
+// import React from 'react'
+// class ClassComponentProps extends React.Component {
+//   state = { 
+//     notice:"Hello Piyush This is from state",
+//    } 
+
+// ClickBtn (){
+//   this.setState({
+//     notice:"Hello Mahesh this is from Updated State now",
+//   })
+// }
+
+
+//   render() { 
+//     return (
+//       <div>
+// <h2>{this.state.notice}</h2>
+// <h1><button onClick={ () =>{ this.ClickBtn()}}>Click Me</button></h1>
+//       </div>
+//     );
+//   }
+// }
+ 
+// export default ClassComponentProps;
+
+
+import React from 'react'
+class ClassComponentState extends React.Component {
+  state = { 
+    name:"Before Update Piyush"
+   } 
+
+ChangeClick(){
+  this.setState({
+    name:"After Update Mahesh",
+    username:"Singh thakur Rajput"
+  })
+}
+
+render() { 
+    return (
+      <div>
+        <h1>
+          {this.state.name}
+        </h1>
+        <h2><button onClick={() =>{this.ChangeClick()}}>Click State Change</button></h2>
+        {this.state.username}
+      </div>
+    );
+  }
+}
+ 
+export default ClassComponentState;
+
+
+
+
